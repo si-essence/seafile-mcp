@@ -1,0 +1,4591 @@
+{
+ "source": "haiwen/seahub v14.0.9-server, seahub/urls.py + seahub/api2/urls.py parsed with ast",
+ "note": "Derived route table, not an official OpenAPI spec. Auth: Authorization: Token <token>. Request bodies are form or JSON and are not described here.",
+ "operations": [
+  {
+   "method": "GET",
+   "path": "/api2/ping/",
+   "view": "Ping",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/auth/ping/",
+   "view": "AuthPing",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/auth-token/",
+   "view": "ObtainAuthToken",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/server-info/",
+   "view": "ServerInfoView",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/logout-device/",
+   "view": "LogoutDeviceView",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/client-login/",
+   "view": "ClientLoginTokenView",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api2/two-factor-auth/{email}/",
+   "view": "TwoFactorAuthView",
+   "urlName": "two-factor-auth-view",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api2/two-factor-auth/{email}/",
+   "view": "TwoFactorAuthView",
+   "urlName": "two-factor-auth-view",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/device-wiped/",
+   "view": "RemoteWipeReportView",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/accounts/",
+   "view": "Accounts",
+   "urlName": "accounts",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api2/accounts/{email}/",
+   "view": "Account",
+   "urlName": "api2-account",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/accounts/{email}/",
+   "view": "Account",
+   "urlName": "api2-account",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/accounts/{email}/",
+   "view": "Account",
+   "urlName": "api2-account",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api2/accounts/{email}/",
+   "view": "Account",
+   "urlName": "api2-account",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/account/info/",
+   "view": "AccountInfo",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api2/account/info/",
+   "view": "AccountInfo",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/regdevice/",
+   "view": "RegDevice",
+   "urlName": "regdevice",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/search/",
+   "view": "Search",
+   "urlName": "api_search",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/items-search/",
+   "view": "ItemsSearch",
+   "urlName": "api-items-search",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/search-user/",
+   "view": "SearchUser",
+   "urlName": "search-user",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/",
+   "view": "Repos",
+   "urlName": "api2-repos",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/repos/",
+   "view": "Repos",
+   "urlName": "api2-repos",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/public/",
+   "view": "PubRepos",
+   "urlName": "api2-pub-repos",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/repos/public/",
+   "view": "PubRepos",
+   "urlName": "api2-pub-repos",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api2/repos/{repo_id}/",
+   "view": "Repo",
+   "urlName": "api2-repo",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/",
+   "view": "Repo",
+   "urlName": "api2-repo",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/repos/{repo_id}/",
+   "view": "Repo",
+   "urlName": "api2-repo",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/history/",
+   "view": "RepoHistory",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api2/repos/{repo_id}/user-folder-perm/",
+   "view": "RepoUserFolderPerm",
+   "urlName": "api2-repo-user-folder-perm",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/user-folder-perm/",
+   "view": "RepoUserFolderPerm",
+   "urlName": "api2-repo-user-folder-perm",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/repos/{repo_id}/user-folder-perm/",
+   "view": "RepoUserFolderPerm",
+   "urlName": "api2-repo-user-folder-perm",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api2/repos/{repo_id}/user-folder-perm/",
+   "view": "RepoUserFolderPerm",
+   "urlName": "api2-repo-user-folder-perm",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api2/repos/{repo_id}/group-folder-perm/",
+   "view": "RepoGroupFolderPerm",
+   "urlName": "api2-repo-group-folder-perm",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/group-folder-perm/",
+   "view": "RepoGroupFolderPerm",
+   "urlName": "api2-repo-group-folder-perm",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/repos/{repo_id}/group-folder-perm/",
+   "view": "RepoGroupFolderPerm",
+   "urlName": "api2-repo-group-folder-perm",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api2/repos/{repo_id}/group-folder-perm/",
+   "view": "RepoGroupFolderPerm",
+   "urlName": "api2-repo-group-folder-perm",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/history-limit/",
+   "view": "RepoHistoryLimit",
+   "urlName": "api2-repo-history-limit",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api2/repos/{repo_id}/history-limit/",
+   "view": "RepoHistoryLimit",
+   "urlName": "api2-repo-history-limit",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/download-info/",
+   "view": "DownloadRepo",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/owner/",
+   "view": "RepoOwner",
+   "urlName": "api2-repo-owner",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api2/repos/{repo_id}/owner/",
+   "view": "RepoOwner",
+   "urlName": "api2-repo-owner",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/download-shared-links/",
+   "view": "RepoDownloadSharedLinks",
+   "urlName": "api2-repo-download-shared-links",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api2/repos/{repo_id}/download-shared-links/{token}/",
+   "view": "RepoDownloadSharedLink",
+   "urlName": "api2-repo-download-shared-link",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/upload-shared-links/",
+   "view": "RepoUploadSharedLinks",
+   "urlName": "api2-repo-upload-shared-links",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api2/repos/{repo_id}/upload-shared-links/{token}/",
+   "view": "RepoUploadSharedLink",
+   "urlName": "api2-repo-upload-shared-link",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/upload-link/",
+   "view": "UploadLinkView",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/update-link/",
+   "view": "UpdateLinkView",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/upload-blks-link/",
+   "view": "UploadBlksLinkView",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/repos/{repo_id}/upload-blks-link/",
+   "view": "UploadBlksLinkView",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/update-blks-link/",
+   "view": "UpdateBlksLinkView",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/owa-file/",
+   "view": "OwaFileView",
+   "urlName": "api2-owa-file-view",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api2/repos/{repo_id}/file/",
+   "view": "FileView",
+   "urlName": "FileView",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/file/",
+   "view": "FileView",
+   "urlName": "FileView",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/repos/{repo_id}/file/",
+   "view": "FileView",
+   "urlName": "FileView",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api2/repos/{repo_id}/file/",
+   "view": "FileView",
+   "urlName": "FileView",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/file/metadata/",
+   "view": "FileMetaDataView",
+   "urlName": "FileMetaDataView",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/files/{file_id}/blks/{block_id}/download-link/",
+   "view": "FileBlockDownloadLinkView",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/file/detail/",
+   "view": "FileDetailView",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/file/history/",
+   "view": "FileHistory",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/file/revision/",
+   "view": "FileRevision",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api2/repos/{repo_id}/file/revert/",
+   "view": "FileRevert",
+   "urlName": "api2-file-revert",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api2/repos/{repo_id}/file/shared-link/",
+   "view": "FileSharedLinkView",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api2/repos/{repo_id}/dir/",
+   "view": "DirView",
+   "urlName": "DirView",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/dir/",
+   "view": "DirView",
+   "urlName": "DirView",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/repos/{repo_id}/dir/",
+   "view": "DirView",
+   "urlName": "DirView",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/dir/metadata/",
+   "view": "DirMetaDataView",
+   "urlName": "DirMetaDataView",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/dir/sub_repo/",
+   "view": "DirSubRepoView",
+   "urlName": "api2-dir-sub-repo",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api2/repos/{repo_id}/dir/shared_items/",
+   "view": "DirSharedItemsEndpoint",
+   "urlName": "api2-dir-shared-items",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/dir/shared_items/",
+   "view": "DirSharedItemsEndpoint",
+   "urlName": "api2-dir-shared-items",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/repos/{repo_id}/dir/shared_items/",
+   "view": "DirSharedItemsEndpoint",
+   "urlName": "api2-dir-shared-items",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api2/repos/{repo_id}/dir/shared_items/",
+   "view": "DirSharedItemsEndpoint",
+   "urlName": "api2-dir-shared-items",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api2/repos/{repo_id}/dir/revert/",
+   "view": "DirRevert",
+   "urlName": "api2-dir-revert",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repos/{repo_id}/thumbnail/",
+   "view": "ThumbnailView",
+   "urlName": "api2-thumbnail",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api2/starredfiles/",
+   "view": "StarredFileView",
+   "urlName": "starredfiles",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/starredfiles/",
+   "view": "StarredFileView",
+   "urlName": "starredfiles",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/starredfiles/",
+   "view": "StarredFileView",
+   "urlName": "starredfiles",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api2/devices/",
+   "view": "DevicesView",
+   "urlName": "api2-devices",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/devices/",
+   "view": "DevicesView",
+   "urlName": "api2-devices",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/shared-repos/",
+   "view": "SharedRepos",
+   "urlName": "sharedrepos",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api2/shared-repos/{repo_id}/",
+   "view": "SharedRepo",
+   "urlName": "sharedrepo",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api2/shared-repos/{repo_id}/",
+   "view": "SharedRepo",
+   "urlName": "sharedrepo",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/beshared-repos/",
+   "view": "BeSharedRepos",
+   "urlName": "beshared-repos",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api2/beshared-repos/{repo_id}/",
+   "view": "BeSharedRepo",
+   "urlName": "beshared-repo",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/default-repo/",
+   "view": "DefaultRepoView",
+   "urlName": "api2-defaultrepo",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/default-repo/",
+   "view": "DefaultRepoView",
+   "urlName": "api2-defaultrepo",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/send-share-link/",
+   "view": "SendShareLinkView",
+   "urlName": "api2-send-share-link",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/send-upload-link/",
+   "view": "SendUploadLinkView",
+   "urlName": "api2-send-upload-link",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api2/shared-links/",
+   "view": "SharedLinksView",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/shared-links/",
+   "view": "SharedLinksView",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/shared-upload-links/",
+   "view": "SharedUploadLinksView",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repo-tokens/",
+   "view": "RepoTokensView",
+   "urlName": "api2-repo-tokens",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/organization/",
+   "view": "OrganizationView",
+   "urlName": "api2-org",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/repo_history_changes/{repo_id}/",
+   "view": "RepoHistoryChange",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/unseen_messages/",
+   "view": "UnseenMessagesCountView",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/avatars/user/{user}/resized/{size}/",
+   "view": "UserAvatarView",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/avatars/user/{user}/resized/{size}/",
+   "view": "UserAvatarView",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api2/groups/",
+   "view": "Groups",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/groups/",
+   "view": "Groups",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/groups/",
+   "view": "Groups",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api2/groups/",
+   "view": "Groups",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api2/groups/{group_id}/",
+   "view": "Groups",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/groups/{group_id}/",
+   "view": "Groups",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/groups/{group_id}/",
+   "view": "Groups",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api2/groups/{group_id}/",
+   "view": "Groups",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api2/groups/{group_id}/members/",
+   "view": "GroupMembers",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/groups/{group_id}/members/",
+   "view": "GroupMembers",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/groups/{group_id}/members/",
+   "view": "GroupMembers",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api2/groups/{group_id}/members/",
+   "view": "GroupMembers",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/groups/{group_id}/repos/",
+   "view": "GroupRepos",
+   "urlName": "api2-grouprepos",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/groups/{group_id}/repos/",
+   "view": "GroupRepos",
+   "urlName": "api2-grouprepos",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api2/groups/{group_id}/repos/{repo_id}/",
+   "view": "GroupRepo",
+   "urlName": "api2-grouprepo",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/repos/{repo_id}/fileops/delete/",
+   "view": "OpDeleteView",
+   "urlName": "api2-fileops-delete",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/repos/{repo_id}/fileops/copy/",
+   "view": "OpCopyView",
+   "urlName": "api2-fileops-copy",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/repos/{repo_id}/fileops/move/",
+   "view": "OpMoveView",
+   "urlName": "api2-fileops-move",
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/client-sso-link/",
+   "view": "ClientSSOLink",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/client-sso-link/",
+   "view": "ClientSSOLink",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api2/client-sso-link/{token}/",
+   "view": "ClientSSOLink",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api2/client-sso-link/{token}/",
+   "view": "ClientSSOLink",
+   "urlName": null,
+   "source": "api2/urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/user/",
+   "view": "User",
+   "urlName": "api-v2.1-user",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/user/",
+   "view": "User",
+   "urlName": "api-v2.1-user",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/user/",
+   "view": "User",
+   "urlName": "api-v2.1-user",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/user/convert-to-team/",
+   "view": "UserConvertToTeamView",
+   "urlName": "api-v2.1-user-convert-to-team",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/user-list/",
+   "view": "UserListView",
+   "urlName": "api-v2.1-user-list",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/user/reset-password/",
+   "view": "ResetPasswordView",
+   "urlName": "api-v2.1-user-reset-password",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/auth-token-by-session/",
+   "view": "AuthTokenBySession",
+   "urlName": "api-v2.1-auth-token-by-session",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/auth-token-by-session/",
+   "view": "AuthTokenBySession",
+   "urlName": "api-v2.1-auth-token-by-session",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/auth-token-by-session/",
+   "view": "AuthTokenBySession",
+   "urlName": "api-v2.1-auth-token-by-session",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/smart-link/",
+   "view": "SmartLink",
+   "urlName": "api-v2.1-smart-link",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/smart-links/{token}/",
+   "view": "SmartLinkToken",
+   "urlName": "api-v2.1-smart-links-token",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/search-file/",
+   "view": "SearchFile",
+   "urlName": "api-v2.1-search-file",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/departments/",
+   "view": "Departments",
+   "urlName": "api-v2.1-all-departments",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/address-book/departments/",
+   "view": "AddressBookDepartments",
+   "urlName": "api-v2.1-address-book-groups-departments",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/address-book/departments/{department_id}/members/",
+   "view": "AddressBookDepartmentMembers",
+   "urlName": "api-v2.1-address-book-groups-department-members",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/all-groups/",
+   "view": "AllGroups",
+   "urlName": "api-v2.1-all-groups",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/shareable-groups/",
+   "view": "ShareableGroups",
+   "urlName": "api-v2.1-shareable-groups",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/groups/",
+   "view": "Groups",
+   "urlName": "api-v2.1-groups",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/groups/",
+   "view": "Groups",
+   "urlName": "api-v2.1-groups",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/groups/",
+   "view": "Groups",
+   "urlName": "api-v2.1-groups",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/groups/",
+   "view": "Groups",
+   "urlName": "api-v2.1-groups",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/groups/{group_id}/",
+   "view": "Group",
+   "urlName": "api-v2.1-group",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/groups/{group_id}/",
+   "view": "Group",
+   "urlName": "api-v2.1-group",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/groups/{group_id}/",
+   "view": "Group",
+   "urlName": "api-v2.1-group",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/groups/{group_id}/libraries/",
+   "view": "GroupLibraries",
+   "urlName": "api-v2.1-group-libraries",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/groups/{group_id}/libraries/",
+   "view": "GroupLibraries",
+   "urlName": "api-v2.1-group-libraries",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/groups/{group_id}/libraries/{repo_id}/",
+   "view": "GroupLibrary",
+   "urlName": "api-v2.1-group-library",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/groups/{group_id}/group-owned-libraries/",
+   "view": "GroupOwnedLibraries",
+   "urlName": "api-v2.1-group-owned-libraries",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/groups/{group_id}/group-owned-libraries/{repo_id}/",
+   "view": "GroupOwnedLibrary",
+   "urlName": "api-v2.1-owned-group-library",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/groups/{group_id}/group-owned-libraries/{repo_id}/",
+   "view": "GroupOwnedLibrary",
+   "urlName": "api-v2.1-owned-group-library",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/groups/{group_id}/group-owned-libraries/{repo_id}/transfer/",
+   "view": "GroupOwnedLibraryTransferView",
+   "urlName": "api-v2.1-group-owned-group-library-transfer",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/groups/{group_id}/members/",
+   "view": "GroupMembers",
+   "urlName": "api-v2.1-group-members",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/groups/{group_id}/members/",
+   "view": "GroupMembers",
+   "urlName": "api-v2.1-group-members",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/groups/{group_id}/members/",
+   "view": "GroupMembers",
+   "urlName": "api-v2.1-group-members",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/groups/{group_id}/members/",
+   "view": "GroupMembers",
+   "urlName": "api-v2.1-group-members",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/groups/{group_id}/search-member/",
+   "view": "GroupSearchMember",
+   "urlName": "api-v2.1-group-search-member",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/groups/{group_id}/members/bulk/",
+   "view": "GroupMembersBulk",
+   "urlName": "api-v2.1-group-members-bulk",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/groups/{group_id}/members/import/",
+   "view": "GroupMembersImport",
+   "urlName": "api-v2.1-group-members-import",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/group-members-import-example/",
+   "view": "GroupMembersImportExample",
+   "urlName": "api-v2.1-group-members-import-example",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/groups/{group_id}/members/{email}/",
+   "view": "GroupMember",
+   "urlName": "api-v2.1-group-member",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/groups/{group_id}/members/{email}/",
+   "view": "GroupMember",
+   "urlName": "api-v2.1-group-member",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/groups/{group_id}/members/{email}/",
+   "view": "GroupMember",
+   "urlName": "api-v2.1-group-member",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/search-group/",
+   "view": "SearchGroup",
+   "urlName": "api-v2.1-search-group",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/groups/{group_id}/invite-links/",
+   "view": "GroupInviteLinks",
+   "urlName": "api-v2.1-group-invite-links",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/groups/{group_id}/invite-links/",
+   "view": "GroupInviteLinks",
+   "urlName": "api-v2.1-group-invite-links",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/groups/{group_id}/invite-links/{token}/",
+   "view": "GroupInviteLink",
+   "urlName": "api-v2.1-group-invite-link",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/address-book/groups/{group_id}/sub-groups/",
+   "view": "AddressBookGroupsSubGroups",
+   "urlName": "api-v2.1-address-book-groups-sub-groups",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/address-book/groups/{group_id}/search-member/",
+   "view": "AddressBookGroupsSearchMember",
+   "urlName": "api-v2.1-address-book-search-member",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/group-owned-libraries/{repo_id}/user-folder-permission/",
+   "view": "GroupOwnedLibraryUserFolderPermission",
+   "urlName": "api-v2.1-group-owned-library-user-folder-permission",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/group-owned-libraries/{repo_id}/user-folder-permission/",
+   "view": "GroupOwnedLibraryUserFolderPermission",
+   "urlName": "api-v2.1-group-owned-library-user-folder-permission",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/group-owned-libraries/{repo_id}/user-folder-permission/",
+   "view": "GroupOwnedLibraryUserFolderPermission",
+   "urlName": "api-v2.1-group-owned-library-user-folder-permission",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/group-owned-libraries/{repo_id}/user-folder-permission/",
+   "view": "GroupOwnedLibraryUserFolderPermission",
+   "urlName": "api-v2.1-group-owned-library-user-folder-permission",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/group-owned-libraries/{repo_id}/group-folder-permission/",
+   "view": "GroupOwnedLibraryGroupFolderPermission",
+   "urlName": "api-v2.1-group-owned-library-group-folder-permission",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/group-owned-libraries/{repo_id}/group-folder-permission/",
+   "view": "GroupOwnedLibraryGroupFolderPermission",
+   "urlName": "api-v2.1-group-owned-library-group-folder-permission",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/group-owned-libraries/{repo_id}/group-folder-permission/",
+   "view": "GroupOwnedLibraryGroupFolderPermission",
+   "urlName": "api-v2.1-group-owned-library-group-folder-permission",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/group-owned-libraries/{repo_id}/group-folder-permission/",
+   "view": "GroupOwnedLibraryGroupFolderPermission",
+   "urlName": "api-v2.1-group-owned-library-group-folder-permission",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/group-owned-libraries/{repo_id}/user-share/",
+   "view": "GroupOwnedLibraryUserShare",
+   "urlName": "api-v2.1-group-owned-library-user-share",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/group-owned-libraries/{repo_id}/user-share/",
+   "view": "GroupOwnedLibraryUserShare",
+   "urlName": "api-v2.1-group-owned-library-user-share",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/group-owned-libraries/{repo_id}/user-share/",
+   "view": "GroupOwnedLibraryUserShare",
+   "urlName": "api-v2.1-group-owned-library-user-share",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/group-owned-libraries/{repo_id}/user-share/",
+   "view": "GroupOwnedLibraryUserShare",
+   "urlName": "api-v2.1-group-owned-library-user-share",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/group-owned-libraries/{repo_id}/group-share/",
+   "view": "GroupOwnedLibraryGroupShare",
+   "urlName": "api-v2.1-group-owned-library-group-share",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/group-owned-libraries/{repo_id}/group-share/",
+   "view": "GroupOwnedLibraryGroupShare",
+   "urlName": "api-v2.1-group-owned-library-group-share",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/group-owned-libraries/{repo_id}/group-share/",
+   "view": "GroupOwnedLibraryGroupShare",
+   "urlName": "api-v2.1-group-owned-library-group-share",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/group-owned-libraries/{repo_id}/group-share/",
+   "view": "GroupOwnedLibraryGroupShare",
+   "urlName": "api-v2.1-group-owned-library-group-share",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/group-owned-libraries/user-share-in-libraries/{repo_id}/",
+   "view": "GroupOwnedLibraryUserShareInLibrary",
+   "urlName": "api-v2.1-group-owned-library-user-share-in-library",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/custom-share-permissions/",
+   "view": "CustomSharePermissionsView",
+   "urlName": "api-v2.1-custom-share-permissions",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/custom-share-permissions/",
+   "view": "CustomSharePermissionsView",
+   "urlName": "api-v2.1-custom-share-permissions",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/repos/{repo_id}/custom-share-permissions/{permission_id}/",
+   "view": "CustomSharePermissionView",
+   "urlName": "api-v2.1-custom-share-permission",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/custom-share-permissions/{permission_id}/",
+   "view": "CustomSharePermissionView",
+   "urlName": "api-v2.1-custom-share-permission",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/repos/{repo_id}/custom-share-permissions/{permission_id}/",
+   "view": "CustomSharePermissionView",
+   "urlName": "api-v2.1-custom-share-permission",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repo-folder-share-info/",
+   "view": "RepoFolderShareInfo",
+   "urlName": "api-v2.1-repo-folder-share-info",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/shared-folders/",
+   "view": "SharedFolders",
+   "urlName": "api-v2.1-shared-folders",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/shared-repos/",
+   "view": "SharedRepos",
+   "urlName": "api-v2.1-shared-repos",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/shared-repos/{repo_id}/",
+   "view": "SharedRepo",
+   "urlName": "api-v2.1-shared-repo",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/shared-repos/{repo_id}/",
+   "view": "SharedRepo",
+   "urlName": "api-v2.1-shared-repo",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/share-links/",
+   "view": "ShareLinks",
+   "urlName": "api-v2.1-share-links",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/share-links/",
+   "view": "ShareLinks",
+   "urlName": "api-v2.1-share-links",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/share-links/",
+   "view": "ShareLinks",
+   "urlName": "api-v2.1-share-links",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/multi-share-links/",
+   "view": "MultiShareLinks",
+   "urlName": "api-v2.1-multi-share-links",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/multi-share-links/batch/",
+   "view": "MultiShareLinksBatch",
+   "urlName": "api-v2.1-multi-share-links-batch",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/share-links/clean-invalid/",
+   "view": "ShareLinksCleanInvalid",
+   "urlName": "api-v2.1-share-links-clean-invalid",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/share-links/{token}/",
+   "view": "ShareLink",
+   "urlName": "api-v2.1-share-link",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/share-links/{token}/",
+   "view": "ShareLink",
+   "urlName": "api-v2.1-share-link",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/share-links/{token}/",
+   "view": "ShareLink",
+   "urlName": "api-v2.1-share-link",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/share-links/{token}/save-file-to-repo/",
+   "view": "ShareLinkSaveFileToRepo",
+   "urlName": "api-v2.1-share-link-save-file-to-repo",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/share-links/{token}/save-items-to-repo/",
+   "view": "ShareLinkSaveItemsToRepo",
+   "urlName": "api-v2.1-share-link-save-items-to-repo",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/share-links/{token}/dirents/",
+   "view": "ShareLinkDirents",
+   "urlName": "api-v2.1-share-link-dirents",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/share-links/{token}/online-office-lock/",
+   "view": "ShareLinkOnlineOfficeLock",
+   "urlName": "api-v2.1-share-link-online-office-lock",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/share-links/{token}/upload/",
+   "view": "ShareLinkUpload",
+   "urlName": "api-v2.1-share-link-upload",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/share-links/{token}/upload/done/",
+   "view": "ShareLinkUploadDone",
+   "urlName": "api-v2.1-share-link-upload-done",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/share-links/{token}/repo-tags/",
+   "view": "ShareLinkRepoTags",
+   "urlName": "api-v2.1-share-link-repo-tags",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/share-links/{token}/tagged-files/{tag_id}/",
+   "view": "ShareLinkRepoTagsTaggedFiles",
+   "urlName": "api-v2.1-share-link-repo-tags-tagged-files",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/share-links/{token}/user-auth/",
+   "view": "ShareLinkUserAuthView",
+   "urlName": "api-v2.1-share-link-user-auth",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/share-links/{token}/user-auth/",
+   "view": "ShareLinkUserAuthView",
+   "urlName": "api-v2.1-share-link-user-auth",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/share-links/{token}/user-auth/",
+   "view": "ShareLinkUserAuthView",
+   "urlName": "api-v2.1-share-link-user-auth",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/share-links/{token}/email-auth/",
+   "view": "ShareLinkEmailAuthView",
+   "urlName": "api-v2.1-share-link-user-auth",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/share-links/{token}/email-auth/",
+   "view": "ShareLinkEmailAuthView",
+   "urlName": "api-v2.1-share-link-user-auth",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/share-links/{token}/email-auth/",
+   "view": "ShareLinkEmailAuthView",
+   "urlName": "api-v2.1-share-link-user-auth",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/upload-links/",
+   "view": "UploadLinks",
+   "urlName": "api-v2.1-upload-links",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/upload-links/",
+   "view": "UploadLinks",
+   "urlName": "api-v2.1-upload-links",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/upload-links/",
+   "view": "UploadLinks",
+   "urlName": "api-v2.1-upload-links",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/upload-links/clean-invalid/",
+   "view": "UploadLinksCleanInvalid",
+   "urlName": "api-v2.1-upload-links-clean-invalid",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/upload-links/{token}/",
+   "view": "UploadLink",
+   "urlName": "api-v2.1-upload-link",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/upload-links/{token}/",
+   "view": "UploadLink",
+   "urlName": "api-v2.1-upload-link",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/upload-links/{token}/",
+   "view": "UploadLink",
+   "urlName": "api-v2.1-upload-link",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/upload-links/{token}/upload/",
+   "view": "UploadLinkUpload",
+   "urlName": "api-v2.1-upload-link-upload",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/revision-tags/tagged-items/",
+   "view": "TaggedItemsView",
+   "urlName": "api-v2.1-revision-tags-tagged-items",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/revision-tags/tagged-items/",
+   "view": "TaggedItemsView",
+   "urlName": "api-v2.1-revision-tags-tagged-items",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/revision-tags/tagged-items/",
+   "view": "TaggedItemsView",
+   "urlName": "api-v2.1-revision-tags-tagged-items",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/revision-tags/tag-names/",
+   "view": "TagNamesView",
+   "urlName": "api-v2.1-revision-tags-tag-names",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/batch/",
+   "view": "ReposBatchView",
+   "urlName": "api-v2.1-repos-batch",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/batch-copy-dir/",
+   "view": "ReposBatchCopyDirView",
+   "urlName": "api-v2.1-repos-batch-copy-dir",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/batch-create-dir/",
+   "view": "ReposBatchCreateDirView",
+   "urlName": "api-v2.1-repos-batch-create-dir",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/batch-copy-item/",
+   "view": "ReposBatchCopyItemView",
+   "urlName": "api-v2.1-repos-batch-copy-item",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/batch-move-item/",
+   "view": "ReposBatchMoveItemView",
+   "urlName": "api-v2.1-repos-batch-move-item",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/repos/batch-delete-folders-item/",
+   "view": "RepoFoldersItemBatchDelete",
+   "urlName": "api-v2.1-repos-folders-batch-delete",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/repos/batch-delete-item/",
+   "view": "ReposBatchDeleteItemView",
+   "urlName": "api-v2.1-repos-batch-delete-item",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/async-batch-copy-item/",
+   "view": "ReposAsyncBatchCopyItemView",
+   "urlName": "api-v2.1-repos-async-batch-copy-item",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/async-batch-move-item/",
+   "view": "ReposAsyncBatchMoveItemView",
+   "urlName": "api-v2.1-repos-async-batch-move-item",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/sync-batch-copy-item/",
+   "view": "ReposSyncBatchCopyItemView",
+   "urlName": "api-v2.1-repos-sync-batch-copy-item",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/sync-batch-move-item/",
+   "view": "ReposSyncBatchMoveItemView",
+   "urlName": "api-v2.1-repos-sync-batch-move-item",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/deleted-repos/",
+   "view": "DeletedRepos",
+   "urlName": "api2-v2.1-deleted-repos",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/deleted-repos/",
+   "view": "DeletedRepos",
+   "urlName": "api2-v2.1-deleted-repos",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/deleted-repos/",
+   "view": "DeletedRepos",
+   "urlName": "api2-v2.1-deleted-repos",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/deleted-repos/{repo_id}/",
+   "view": "DeletedRepo",
+   "urlName": "api2-v2.1-deleted-repo",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/",
+   "view": "ReposView",
+   "urlName": "api-v2.1-repos-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/repos/{repo_id}/",
+   "view": "RepoView",
+   "urlName": "api-v2.1-repo-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/",
+   "view": "RepoView",
+   "urlName": "api-v2.1-repo-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/repos/{repo_id}/file/",
+   "view": "FileView",
+   "urlName": "api-v2.1-file-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/file/",
+   "view": "FileView",
+   "urlName": "api-v2.1-file-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/file/",
+   "view": "FileView",
+   "urlName": "api-v2.1-file-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/repos/{repo_id}/file/",
+   "view": "FileView",
+   "urlName": "api-v2.1-file-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/repos/{repo_id}/batch-lock-file/",
+   "view": "FileBatchLockView",
+   "urlName": "api-v2.1-file-batch-lock",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/repos/{repo_id}/batch-unlock-file/",
+   "view": "FileBatchUnlockView",
+   "urlName": "api-v2.1-file-batch-unlock",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/file/access-log/",
+   "view": "FileAccessLogView",
+   "urlName": "api-v2.1-file-access-log-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/file/history/",
+   "view": "FileHistoryView",
+   "urlName": "api-v2.1-file-history-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/file/new_history/",
+   "view": "NewFileHistoryView",
+   "urlName": "api-v2.1-new-file-history-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/repos/{repo_id}/dir/",
+   "view": "DirView",
+   "urlName": "api-v2.1-dir-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/dir/",
+   "view": "DirView",
+   "urlName": "api-v2.1-dir-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/dir/",
+   "view": "DirView",
+   "urlName": "api-v2.1-dir-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/commits/{commit_id}/",
+   "view": "RepoCommitView",
+   "urlName": "api-v2.1-repo-commit",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/commits/{commit_id}/dir/",
+   "view": "RepoCommitDirView",
+   "urlName": "api-v2.1-repo-commit-dir",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/commits/{commit_id}/revert/",
+   "view": "RepoCommitRevertView",
+   "urlName": "api-v2.1-repo-commit-revert",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/dir/detail/",
+   "view": "DirDetailView",
+   "urlName": "api-v2.1-dir-detail-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/repos/{repo_id}/trash/",
+   "view": "RepoTrash",
+   "urlName": "api-v2.1-repo-trash",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/trash/",
+   "view": "RepoTrash",
+   "urlName": "api-v2.1-repo-trash",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/trash/",
+   "view": "RepoTrash",
+   "urlName": "api-v2.1-repo-trash",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/trash2/",
+   "view": "RepoTrash2",
+   "urlName": "api-v2.1-repo-trash2",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/trash2/search/",
+   "view": "SearchRepoTrash2",
+   "urlName": "api-v2.1-repo-trash2-search",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/trash2/revert/",
+   "view": "RevertRepoTrash2",
+   "urlName": "api-v2.1-repo-trash2-revert",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/trash/revert-dirents/",
+   "view": "RepoTrashRevertDirents",
+   "urlName": "api-v2.1-repo-trash-revert-dirents",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/history/",
+   "view": "RepoHistory",
+   "urlName": "api-v2.1-repo-history",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/set-password/",
+   "view": "RepoSetPassword",
+   "urlName": "api-v2.1-repo-set-password",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/repos/{repo_id}/set-password/",
+   "view": "RepoSetPassword",
+   "urlName": "api-v2.1-repo-set-password",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/send-new-password/",
+   "view": "RepoSendNewPassword",
+   "urlName": "api-v2.1-repo-send-new-password",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/repo-tags/",
+   "view": "RepoTagsView",
+   "urlName": "api-v2.1-repo-tags",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/repo-tags/",
+   "view": "RepoTagsView",
+   "urlName": "api-v2.1-repo-tags",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/repos/{repo_id}/repo-tags/",
+   "view": "RepoTagsView",
+   "urlName": "api-v2.1-repo-tags",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/repos/{repo_id}/repo-tags/{repo_tag_id}/",
+   "view": "RepoTagView",
+   "urlName": "api-v2.1-repo-tag",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/repos/{repo_id}/repo-tags/{repo_tag_id}/",
+   "view": "RepoTagView",
+   "urlName": "api-v2.1-repo-tag",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/file-tags/",
+   "view": "RepoFileTagsView",
+   "urlName": "api-v2.1-file-tags",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/file-tags/",
+   "view": "RepoFileTagsView",
+   "urlName": "api-v2.1-file-tags",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/repos/{repo_id}/file-tags/{file_tag_id}/",
+   "view": "RepoFileTagView",
+   "urlName": "api-v2.1-file-tag",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/tagged-files/{repo_tag_id}/",
+   "view": "TaggedFilesView",
+   "urlName": "api-v2.1-tagged-files",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/file/participants/",
+   "view": "FileParticipantsView",
+   "urlName": "api-v2.1-file-participants",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/file/participants/",
+   "view": "FileParticipantsView",
+   "urlName": "api-v2.1-file-participants",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/repos/{repo_id}/file/participant/",
+   "view": "FileParticipantView",
+   "urlName": "api-v2.1-file-participant",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/related-users/",
+   "view": "RepoRelatedUsersView",
+   "urlName": "api-v2.1-related-user",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/auto-delete/",
+   "view": "RepoAutoDeleteView",
+   "urlName": "api-v2.1-repo-auto-delete",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/repos/{repo_id}/auto-delete/",
+   "view": "RepoAutoDeleteView",
+   "urlName": "api-v2.1-repo-auto-delete",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/archive/",
+   "view": "RepoArchiveView",
+   "urlName": "api-v2.1-repo-archive",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/share-links/",
+   "view": "RepoShareLinks",
+   "urlName": "api-v2.1-repo-share-links",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/repos/{repo_id}/share-links/{token}/",
+   "view": "RepoShareLink",
+   "urlName": "api-v2.1-repo-share-link",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/upload-links/",
+   "view": "RepoUploadLinks",
+   "urlName": "api-v2.1-repo-upload-links",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/repos/{repo_id}/upload-links/{token}/",
+   "view": "RepoUploadLink",
+   "urlName": "api-v2.1-repo-upload-link",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/share-info/",
+   "view": "RepoShareInfoView",
+   "urlName": "api-v2.1-repo-share-info-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/image-rotate/",
+   "view": "RepoImageRotateView",
+   "urlName": "api-v2.1-repo-image-rotate-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/office-suite/",
+   "view": "OfficeSuiteConfig",
+   "urlName": "api-v2.1-repo-office-suite",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/repos/{repo_id}/office-suite/",
+   "view": "OfficeSuiteConfig",
+   "urlName": "api-v2.1-repo-office-suite",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/file/{file_uuid}/comments/",
+   "view": "FileCommentsView",
+   "urlName": "api-v2.1-file-comments",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/file/{file_uuid}/comments/",
+   "view": "FileCommentsView",
+   "urlName": "api-v2.1-file-comments",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/repos/{repo_id}/file/{file_uuid}/comments/{comment_id}/",
+   "view": "FileCommentView",
+   "urlName": "api-v2.1-file-comment",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/file/{file_uuid}/comments/{comment_id}/",
+   "view": "FileCommentView",
+   "urlName": "api-v2.1-file-comment",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/repos/{repo_id}/file/{file_uuid}/comments/{comment_id}/",
+   "view": "FileCommentView",
+   "urlName": "api-v2.1-file-comment",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/file/{file_uuid}/comments/{comment_id}/replies/",
+   "view": "FileCommentRepliesView",
+   "urlName": "api-v2.1-file-comment-replies",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/file/{file_uuid}/comments/{comment_id}/replies/",
+   "view": "FileCommentRepliesView",
+   "urlName": "api-v2.1-file-comment-replies",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/repos/{repo_id}/file/{file_uuid}/comments/{comment_id}/replies/{reply_id}/",
+   "view": "FileCommentReplyView",
+   "urlName": "api-v2.1-file-comment-repolies",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/file/{file_uuid}/comments/{comment_id}/replies/{reply_id}/",
+   "view": "FileCommentReplyView",
+   "urlName": "api-v2.1-file-comment-repolies",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/repos/{repo_id}/file/{file_uuid}/comments/{comment_id}/replies/{reply_id}/",
+   "view": "FileCommentReplyView",
+   "urlName": "api-v2.1-file-comment-repolies",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/repo-api-tokens/",
+   "view": "RepoAPITokensView",
+   "urlName": "api-v2.1-repo-api-tokens",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/repo-api-tokens/",
+   "view": "RepoAPITokensView",
+   "urlName": "api-v2.1-repo-api-tokens",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/repos/{repo_id}/repo-api-tokens/{app_name}/",
+   "view": "RepoAPITokenView",
+   "urlName": "api-v2.1-repo-api-token",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/repos/{repo_id}/repo-api-tokens/{app_name}/",
+   "view": "RepoAPITokenView",
+   "urlName": "api-v2.1-repo-api-token",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/repo-notification-jwt-token/",
+   "view": "RepoNotificationJwtTokenView",
+   "urlName": "api-v2.1-repo-jwt-token",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/via-repo-token/dir/",
+   "view": "ViaRepoDirView",
+   "urlName": "via-repo-dir",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/via-repo-token/dir/",
+   "view": "ViaRepoDirView",
+   "urlName": "via-repo-dir",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/via-repo-token/dir/",
+   "view": "ViaRepoDirView",
+   "urlName": "via-repo-dir",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/via-repo-token/upload-link/",
+   "view": "ViaRepoUploadLinkView",
+   "urlName": "via-upload-link",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/via-repo-token/download-link/",
+   "view": "ViaRepoDownloadLinkView",
+   "urlName": "via-download-link",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/via-repo-token/repo-info/",
+   "view": "RepoInfoView",
+   "urlName": "via-fetch-repo",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/via-repo-token/search-files/",
+   "view": "ViaRepoSearchFilesView",
+   "urlName": "via-repo-token-search-files",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/via-repo-token/sync-batch-move-item/",
+   "view": "ViaRepoBatchMove",
+   "urlName": "via-repo-token-move",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/via-repo-token/sync-batch-copy-item/",
+   "view": "ViaRepoBatchCopy",
+   "urlName": "via-repo-token-copy",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/via-repo-token/batch-delete-item/",
+   "view": "ViaRepoBatchDelete",
+   "urlName": "via-repo-token-delete",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/via-repo-token/file/",
+   "view": "ViaRepoTokenFile",
+   "urlName": "via-repo-token-file",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/via-repo-token/file/",
+   "view": "ViaRepoTokenFile",
+   "urlName": "via-repo-token-file",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/via-repo-token/file/",
+   "view": "ViaRepoTokenFile",
+   "urlName": "via-repo-token-file",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/via-repo-token/file/",
+   "view": "ViaRepoTokenFile",
+   "urlName": "via-repo-token-file",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/via-repo-token/move-dir/",
+   "view": "ViaRepoMoveDir",
+   "urlName": "via-repo-token-move-dir",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/via-repo-token/share-links/",
+   "view": "ViaRepoShareLink",
+   "urlName": "via-repo-token-share-links",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/via-repo-token/metadata/records/",
+   "view": "ViaRepoMetadataRecords",
+   "urlName": "via-repo-token-metadata-records",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/via-repo-token/metadata/records/",
+   "view": "ViaRepoMetadataRecords",
+   "urlName": "via-repo-token-metadata-records",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/via-repo-token/metadata/views/",
+   "view": "ViaRepoMetadataViews",
+   "urlName": "via-repo-token-metadata-views",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/via-repo-token/metadata/views/",
+   "view": "ViaRepoMetadataViews",
+   "urlName": "via-repo-token-metadata-views",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/via-repo-token/metadata/views/",
+   "view": "ViaRepoMetadataViews",
+   "urlName": "via-repo-token-metadata-views",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/via-repo-token/metadata/views/",
+   "view": "ViaRepoMetadataViews",
+   "urlName": "via-repo-token-metadata-views",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/via-repo-token/metadata/views/{view_id}/",
+   "view": "ViaRepoMetadataViewsDetailView",
+   "urlName": "via-repo-token-metadata-views-detail",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/via-repo-token/metadata/duplicate-view/",
+   "view": "ViaRepoMetadataViewsDuplicateView",
+   "urlName": "via-repo-token-metadata-duplicate-views",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/via-repo-token/metadata/move-views/",
+   "view": "ViaRepoMetadataViewsMoveView",
+   "urlName": "via-repo-token-metadata-move-views",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/via-repo-token/metadata/tags-status/",
+   "view": "ViaRepoMetadataTagsStatusManage",
+   "urlName": "via-repo-token-metadata-tags-status",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/via-repo-token/metadata/tags-status/",
+   "view": "ViaRepoMetadataTagsStatusManage",
+   "urlName": "via-repo-token-metadata-tags-status",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/via-repo-token/metadata/tags/",
+   "view": "ViaRepoMetadataTags",
+   "urlName": "via-repo-token-metadata-tags",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/via-repo-token/metadata/tags/",
+   "view": "ViaRepoMetadataTags",
+   "urlName": "via-repo-token-metadata-tags",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/via-repo-token/metadata/tags/",
+   "view": "ViaRepoMetadataTags",
+   "urlName": "via-repo-token-metadata-tags",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/via-repo-token/metadata/tags/",
+   "view": "ViaRepoMetadataTags",
+   "urlName": "via-repo-token-metadata-tags",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/via-repo-token/metadata/tags-links/",
+   "view": "ViaRepoMetadataTagsLinks",
+   "urlName": "via-repo-token-metadata-tags-links",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/via-repo-token/metadata/tags-links/",
+   "view": "ViaRepoMetadataTagsLinks",
+   "urlName": "via-repo-token-metadata-tags-links",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/via-repo-token/metadata/tags-links/",
+   "view": "ViaRepoMetadataTagsLinks",
+   "urlName": "via-repo-token-metadata-tags-links",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/via-repo-token/metadata/file-tags/",
+   "view": "ViaRepoMetadataFileTags",
+   "urlName": "via-repo-token-metadata-file-tags",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/via-repo-token/metadata/tag-files/{tag_id}/",
+   "view": "ViaRepoMetadataTagFiles",
+   "urlName": "via-repo-token-metadata-tag-files",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/via-repo-token/metadata/tags-files/",
+   "view": "ViaRepoMetadataTagsFiles",
+   "urlName": "via-repo-token-tags-files",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/via-repo-token/metadata/merge-tags/",
+   "view": "ViaRepoMetadataMergeTags",
+   "urlName": "via-repo-token-metadata-merge-tags",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/via-repo-token/recently-changed-files/",
+   "view": "ViaRepoRecentlyChangedFiles",
+   "urlName": "via-repo-token-recently-changed-files",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/via-repo-token/recently-deleted-files/",
+   "view": "ViaRepoRecentlyDeletedFiles",
+   "urlName": "via-repo-token-recently-deleted-files",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/related-files/",
+   "view": "RelatedFilesView",
+   "urlName": "api-v2.1-related-files",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/related-files/",
+   "view": "RelatedFilesView",
+   "urlName": "api-v2.1-related-files",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/related-files/{related_id}/",
+   "view": "RelatedFileView",
+   "urlName": "api-v2.1-related-file",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/markdown-lint/",
+   "view": "MarkdownLintView",
+   "urlName": "api-v2.1-markdown-lint",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/published-repo-search/",
+   "view": "PublishedRepoSearchView",
+   "urlName": "api-v2.1-published-repo-search",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/recent-added-files/",
+   "view": "RecentAddedFilesView",
+   "urlName": "api-v2.1-recent-added-files",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/tags/",
+   "view": "FileTagsView",
+   "urlName": "api-v2.1-filetags-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/tags/",
+   "view": "FileTagsView",
+   "urlName": "api-v2.1-filetags-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/repos/{repo_id}/tags/",
+   "view": "FileTagsView",
+   "urlName": "api-v2.1-filetags-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/repos/{repo_id}/tags/{name}/",
+   "view": "FileTagView",
+   "urlName": "api-v2.1-filetag-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/zip-task/",
+   "view": "ZipTaskView",
+   "urlName": "api-v2.1-zip-task",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/zip-task/",
+   "view": "ZipTaskView",
+   "urlName": "api-v2.1-zip-task",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/file-uploaded-bytes/",
+   "view": "RepoFileUploadedBytesView",
+   "urlName": "api-v2.1-repo-file-uploaded-bytes",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/share-link-zip-task/",
+   "view": "ShareLinkZipTaskView",
+   "urlName": "api-v2.1-share-link-zip-task",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/share-link-zip-task/",
+   "view": "ShareLinkZipTaskView",
+   "urlName": "api-v2.1-share-link-zip-task",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/query-zip-progress/",
+   "view": "QueryZipProgressView",
+   "urlName": "api-v2.1-query-zip-progress",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/cancel-zip-task/",
+   "view": "CancelZipTaskView",
+   "urlName": "api-v2.1-cancel-zip-task",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/copy-move-task/",
+   "view": "CopyMoveTaskView",
+   "urlName": "api-v2.1-copy-move-task",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/copy-move-task/",
+   "view": "CopyMoveTaskView",
+   "urlName": "api-v2.1-copy-move-task",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/query-copy-move-progress/",
+   "view": "QueryCopyMoveProgressView",
+   "urlName": "api-v2.1-query-copy-move-progress",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/query-io-status/",
+   "view": "SeahubIOStatus",
+   "urlName": "api-v2.1-query-export-status",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/move-folder-merge/",
+   "view": "MoveFolderMergeView",
+   "urlName": "api-v2.1-move-folder-merge",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/notifications/",
+   "view": "NotificationsView",
+   "urlName": "api-v2.1-notifications",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/notifications/",
+   "view": "NotificationsView",
+   "urlName": "api-v2.1-notifications",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/notifications/",
+   "view": "NotificationsView",
+   "urlName": "api-v2.1-notifications",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/notifications/",
+   "view": "NotificationsView",
+   "urlName": "api-v2.1-notifications",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/notification/",
+   "view": "NotificationView",
+   "urlName": "api-v2.1-notification",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/sdoc-notifications/",
+   "view": "SdocNotificationsView",
+   "urlName": "api-v2.1-sdoc-notifications",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/sdoc-notifications/",
+   "view": "SdocNotificationsView",
+   "urlName": "api-v2.1-sdoc-notifications",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/sdoc-notifications/",
+   "view": "SdocNotificationsView",
+   "urlName": "api-v2.1-sdoc-notifications",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/sdoc-notification/",
+   "view": "SdocNotificationView",
+   "urlName": "api-v2.1-notification",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/all-notifications/",
+   "view": "AllNotificationsView",
+   "urlName": "api-v2.1-all-notification",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/all-notifications/",
+   "view": "AllNotificationsView",
+   "urlName": "api-v2.1-all-notification",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/sys-user-notifications/{nid}/seen/",
+   "view": "SysUserNotificationSeenView",
+   "urlName": "api-v2.1-notification-seen",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/sys-user-notifications/unseen/",
+   "view": "SysUserNotificationUnseenView",
+   "urlName": "api-v2.1-notification-unseen",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/invitations/",
+   "view": "InvitationsView",
+   "urlName": null,
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/invitations/",
+   "view": "InvitationsView",
+   "urlName": null,
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/invitations/batch/",
+   "view": "InvitationsBatchView",
+   "urlName": null,
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/invitations/{token}/",
+   "view": "InvitationView",
+   "urlName": null,
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/invitations/{token}/",
+   "view": "InvitationView",
+   "urlName": null,
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/invitations/{token}/revoke/",
+   "view": "InvitationRevokeView",
+   "urlName": null,
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/shared/invitations/",
+   "view": "RepoShareInvitationsView",
+   "urlName": "api-v2.1-repo-share-invitations",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/shared/invitations/batch/",
+   "view": "RepoShareInvitationsBatchView",
+   "urlName": "api-v2.1-repo-share-invitations-batch",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/repos/{repo_id}/shared/invitation/",
+   "view": "RepoShareInvitationView",
+   "urlName": "api-v2.1-repo-share-invitation",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/repos/{repo_id}/shared/invitation/",
+   "view": "RepoShareInvitationView",
+   "urlName": "api-v2.1-repo-share-invitation",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/user-avatar/",
+   "view": "UserAvatarView",
+   "urlName": "api-v2.1-user-avatar",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/user-avatar/",
+   "view": "UserAvatarView",
+   "urlName": "api-v2.1-user-avatar",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/webdav-secret/",
+   "view": "WebdavSecretView",
+   "urlName": "api-v2.1-webdav-secret",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/webdav-secret/",
+   "view": "WebdavSecretView",
+   "urlName": "api-v2.1-webdav-secret",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/starred-items/",
+   "view": "StarredItems",
+   "urlName": "api-v2.1-starred-items",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/starred-items/",
+   "view": "StarredItems",
+   "urlName": "api-v2.1-starred-items",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/starred-items/",
+   "view": "StarredItems",
+   "urlName": "api-v2.1-starred-items",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/async-batch-move-item/callback/",
+   "view": "BatchMoveItemsUpdatePath",
+   "urlName": "api-v2.1-async-batch-move-item-callback",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/monitored-repos/",
+   "view": "MonitoredRepos",
+   "urlName": "api-v2.1-monitored-repos",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/monitored-repos/{repo_id}/",
+   "view": "MonitoredRepo",
+   "urlName": "api-v2.1-monitored-repo",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/wikis/",
+   "view": "WikisView",
+   "urlName": "api-v2.1-wikis",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/wikis/",
+   "view": "WikisView",
+   "urlName": "api-v2.1-wikis",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/wikis/{wiki_id}/",
+   "view": "WikiView",
+   "urlName": "api-v2.1-wiki",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/wikis/{wiki_id}/",
+   "view": "WikiView",
+   "urlName": "api-v2.1-wiki",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/wikis/{wiki_id}/",
+   "view": "WikiView",
+   "urlName": "api-v2.1-wiki",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/wikis/{wiki_id}/dir/",
+   "view": "WikiPagesDirView",
+   "urlName": "api-v2.1-wiki-pages-dir",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/wikis/{wiki_id}/content/",
+   "view": "WikiPageContentView",
+   "urlName": "api-v2.1-wiki-pages-content",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/wikis2/",
+   "view": "Wikis2View",
+   "urlName": "api-v2.1-wikis2",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/wikis2/",
+   "view": "Wikis2View",
+   "urlName": "api-v2.1-wikis2",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/wiki2/{wiki_id}/",
+   "view": "Wiki2View",
+   "urlName": "api-v2.1-wiki2",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/wiki2/{wiki_id}/",
+   "view": "Wiki2View",
+   "urlName": "api-v2.1-wiki2",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/wiki2/{wiki_id}/config/",
+   "view": "Wiki2ConfigView",
+   "urlName": "api-v2.1-wiki2-config",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/wiki2/{wiki_id}/config/",
+   "view": "Wiki2ConfigView",
+   "urlName": "api-v2.1-wiki2-config",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/wiki2/{wiki_id}/settings/",
+   "view": "Wiki2SettingsView",
+   "urlName": "api-v2.1-wiki2-settings",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/wiki2/{wiki_id}/settings/",
+   "view": "Wiki2SettingsView",
+   "urlName": "api-v2.1-wiki2-settings",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/wiki2/{wiki_id}/linked-repos/",
+   "view": "Wiki2LinkedReposView",
+   "urlName": "api-v2.1-wiki2-linked-repos",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/wiki2/{wiki_id}/linked-repos/",
+   "view": "Wiki2LinkedReposView",
+   "urlName": "api-v2.1-wiki2-linked-repos",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/wiki2/{wiki_id}/linked-repos/{linked_repo_id}/dir/",
+   "view": "Wiki2LinkedRepoDirView",
+   "urlName": "api-v2.1-wiki2-linked-repo-dir",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/wiki2/{wiki_id}/linked-repos/{linked_repo_id}/file-uuid/",
+   "view": "Wiki2LinkedRepoFileUuidView",
+   "urlName": "api-v2.1-wiki2-linked-repo-file-uuid",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/wiki2/{wiki_id}/publish/config/",
+   "view": "Wiki2PublishConfigView",
+   "urlName": "api-v2.1-wiki2-publish-config",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/wiki2/{wiki_id}/pages/",
+   "view": "Wiki2PagesView",
+   "urlName": "api-v2.1-wiki2-pages",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/wiki2/{wiki_id}/pages/",
+   "view": "Wiki2PagesView",
+   "urlName": "api-v2.1-wiki2-pages",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/wiki2/{wiki_id}/page/{page_id}/",
+   "view": "Wiki2PageView",
+   "urlName": "api-v2.1-wiki2-page",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/wiki2/{wiki_id}/page/{page_id}/",
+   "view": "Wiki2PageView",
+   "urlName": "api-v2.1-wiki2-page",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/wiki2/{wiki_id}/page/{page_id}/",
+   "view": "Wiki2PageView",
+   "urlName": "api-v2.1-wiki2-page",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/wiki2/{wiki_id}/page/{page_id}/config/",
+   "view": "Wiki2PageConfigView",
+   "urlName": "api-v2.1-wiki2-page-config",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/wiki2/{wiki_id}/page/{page_id}/export/",
+   "view": "WikiPageExport",
+   "urlName": "api-v2.1-wiki2-page-export",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/wiki2/{wiki_id}/publish/page/{page_id}/",
+   "view": "Wiki2PublishPageView",
+   "urlName": "api-v2.1-wiki2-page",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/wiki2/{wiki_id}/duplicate-page/",
+   "view": "Wiki2DuplicatePageView",
+   "urlName": "api-v2.1-wiki2-duplicate-page",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/wiki2/{wiki_id}/import-page/",
+   "view": "Wiki2ImportPageView",
+   "urlName": "api-v2.1-wiki2-import-page",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/wiki2/{wiki_id}/trash/",
+   "view": "WikiPageTrashView",
+   "urlName": "api-v2.1-wiki2-trash",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/wiki2/{wiki_id}/trash/",
+   "view": "WikiPageTrashView",
+   "urlName": "api-v2.1-wiki2-trash",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/wiki2/{wiki_id}/trash/",
+   "view": "WikiPageTrashView",
+   "urlName": "api-v2.1-wiki2-trash",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/wiki2/{wiki_id}/publish/",
+   "view": "Wiki2PublishView",
+   "urlName": "api-v2.1-wiki2-publish",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/wiki2/{wiki_id}/publish/",
+   "view": "Wiki2PublishView",
+   "urlName": "api-v2.1-wiki2-publish",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/wiki2/{wiki_id}/publish/",
+   "view": "Wiki2PublishView",
+   "urlName": "api-v2.1-wiki2-publish",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/wiki2/{wiki_id}/file-views/",
+   "view": "Wiki2FileViews",
+   "urlName": "api-v2.1-wiki2-file-views",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/wiki2/{wiki_id}/file-views/",
+   "view": "Wiki2FileViews",
+   "urlName": "api-v2.1-wiki2-file-views",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/wiki2/{wiki_id}/file-views/{file_view_id}/",
+   "view": "Wiki2FileView",
+   "urlName": "api-v2.1-wiki2-file-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/wiki2/{wiki_id}/file-views/{file_view_id}/",
+   "view": "Wiki2FileView",
+   "urlName": "api-v2.1-wiki2-file-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/wiki2/{wiki_id}/file-views/{file_view_id}/",
+   "view": "Wiki2FileView",
+   "urlName": "api-v2.1-wiki2-file-view",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/wiki2/{wiki_id}/file-views/{file_view_id}/duplicate/",
+   "view": "Wiki2FileViewDuplicateView",
+   "urlName": "api-v2.1-wiki2-file-view-duplicate",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/wiki2/{wiki_id}/file-view/{file_view_id}/records/",
+   "view": "Wiki2FileViewRecords",
+   "urlName": "api-v2.1-wiki2-metadata-records",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/wiki2/search/",
+   "view": "WikiSearch",
+   "urlName": "api-v2.1-wiki2-search",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/wiki2/multi-search/",
+   "view": "Wiki2MultiSearch",
+   "urlName": "api-v2.1-wiki2-multi-search",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/convert-wiki/",
+   "view": "WikiConvertView",
+   "urlName": "api-v2.1-wiki-convert",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/import-confluence/",
+   "view": "ImportConfluenceView",
+   "urlName": "api-v2.1-import-confluence",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/activities/",
+   "view": "ActivitiesView",
+   "urlName": "api-v2.1-acitvity",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/ocm/shares-prepare/",
+   "view": "OCMSharesPrepareView",
+   "urlName": "api-v2.1-ocm-shares-prepare",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/ocm/shares-prepare/",
+   "view": "OCMSharesPrepareView",
+   "urlName": "api-v2.1-ocm-shares-prepare",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/ocm/shares-prepare/{pk}/",
+   "view": "OCMSharePrepareView",
+   "urlName": "api-v2.1-ocm-share-prepare",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/ocm/shares-received/",
+   "view": "OCMSharesReceivedView",
+   "urlName": "api-v2.1-ocm-shares-received",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/ocm/shares-received/{pk}/",
+   "view": "OCMShareReceivedView",
+   "urlName": "api-v2.1-ocm-share-received",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/ocm/providers/{provider_id}/repos/{repo_id}/dir/",
+   "view": "OCMReposDirView",
+   "urlName": "api-v2.1-ocm-repos-dir",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/ocm/providers/{provider_id}/repos/{repo_id}/download-link/",
+   "view": "OCMReposDownloadLinkView",
+   "urlName": "api-v2.1-ocm-repos-download-link",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/ocm/providers/{provider_id}/repos/{repo_id}/upload-link/",
+   "view": "OCMReposUploadLinkView",
+   "urlName": "api-v2.1-ocm-repos-upload-link",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/user-activities/",
+   "view": "UserActivitiesView",
+   "urlName": "api-v2.1-admin-user-activity",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/abuse-reports/",
+   "view": "AbuseReportsView",
+   "urlName": "api-v2.1-abuse-reports",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/abuse-reports/",
+   "view": "AdminAbuseReportsView",
+   "urlName": "api-v2.1-admin-abuse-reports",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/admin/abuse-reports/{pk}/",
+   "view": "AdminAbuseReportView",
+   "urlName": "api-v2.1-admin-abuse-report",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/generate-user-auth-token/",
+   "view": "AdminGenerateUserAuthToken",
+   "urlName": "api-v2.1-admin-generate-user-auth-token",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/sysinfo/",
+   "view": "SysInfo",
+   "urlName": "api-v2.1-sysinfo",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/web-settings/",
+   "view": "AdminWebSettings",
+   "urlName": "api-v2.1-web-settings",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/admin/web-settings/",
+   "view": "AdminWebSettings",
+   "urlName": "api-v2.1-web-settings",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/revision-tags/tagged-items/",
+   "view": "AdminTaggedItemsView",
+   "urlName": "api-v2.1-admin-revision-tags-tagged-items",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/statistics/file-operations/",
+   "view": "FileOperationsView",
+   "urlName": "api-v2.1-admin-statistics-file-operations",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/statistics/total-storage/",
+   "view": "TotalStorageView",
+   "urlName": "api-v2.1-admin-statistics-total-storage",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/statistics/active-users/",
+   "view": "ActiveUsersView",
+   "urlName": "api-v2.1-admin-statistics-active-users",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/statistics/system-traffic/",
+   "view": "SystemTrafficView",
+   "urlName": "api-v2.1-admin-statistics-system-traffic",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/statistics/system-user-traffic/",
+   "view": "SystemUserTrafficView",
+   "urlName": "api-v2.1-admin-statistics-system-user-traffic",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/statistics/system-org-traffic/",
+   "view": "SystemOrgTrafficView",
+   "urlName": "api-v2.1-admin-statistics-system-org-traffic",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/statistics/system-user-traffic/excel/",
+   "view": "SystemUserTrafficExcelView",
+   "urlName": "api-v2.1-admin-statistics-system-user-traffic-excel",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/statistics/system-user-storage/excel/",
+   "view": "SystemUserStorageExcelView",
+   "urlName": "api-v2.1-admin-statistics-system-user-storage-excel",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/statistics/system-metrics/",
+   "view": "SystemMetricsView",
+   "urlName": "api-v2.1-admin-statistics-system-metrics",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/statistics/ai/",
+   "view": "AdminAIStatisticsView",
+   "urlName": "api-v2.1-admin-statistics-ai",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/statistics/ai/detail/",
+   "view": "AdminAIStatisticsDetailView",
+   "urlName": "api-v2.1-admin-statistics-ai-detail",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/users/",
+   "view": "AdminUsers",
+   "urlName": "api-v2.1-admin-users",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/users/",
+   "view": "AdminUsers",
+   "urlName": "api-v2.1-admin-users",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/ldap-users/",
+   "view": "AdminLDAPUsers",
+   "urlName": "api-v2.1-admin-ldap-users",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/search-user/",
+   "view": "AdminSearchUser",
+   "urlName": "api-v2.1-admin-search-user",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/admin/update-user-ccnet-email/",
+   "view": "AdminUpdateUserCcnetEmail",
+   "urlName": "api-v2.1-admin-update-user-ccnet-email",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/user-list/",
+   "view": "AdminUserList",
+   "urlName": "api-v2.1-admin-user-list",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/user-convert-to-team/",
+   "view": "AdminUserConvertToTeamView",
+   "urlName": "api-v2.1-admin-user-list",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/users/{email}/",
+   "view": "AdminUser",
+   "urlName": "api-v2.1-admin-user",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/users/{email}/",
+   "view": "AdminUser",
+   "urlName": "api-v2.1-admin-user",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/admin/users/{email}/",
+   "view": "AdminUser",
+   "urlName": "api-v2.1-admin-user",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/admin/users/{email}/reset-password/",
+   "view": "AdminUserResetPassword",
+   "urlName": "api-v2.1-admin-user-reset-password",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/users/{email}/groups/",
+   "view": "AdminUserGroups",
+   "urlName": "api-v2.1-admin-user-groups",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/users/{email}/share-links/",
+   "view": "AdminUserShareLinks",
+   "urlName": "api-v2.1-admin-user-share-links",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/users/{email}/upload-links/",
+   "view": "AdminUserUploadLinks",
+   "urlName": "api-v2.1-admin-user-upload-links",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/users/{email}/beshared-repos/",
+   "view": "AdminUserBeSharedRepos",
+   "urlName": "api-v2.1-admin-user-beshared-repos",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/users/{email}/shared-folders/",
+   "view": "AdminUserSharedFolders",
+   "urlName": "api-v2.1-admin-user-shared-folders",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/users/{email}/shared-repos/",
+   "view": "AdminUserSharedRepos",
+   "urlName": "api-v2.1-admin-user-shared-repos",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/admin-users/",
+   "view": "AdminAdminUsers",
+   "urlName": "api-v2.1-admin-admin-users",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/admin-users/batch/",
+   "view": "AdminAdminUsersBatch",
+   "urlName": "api-v2.1-admin-users-batch",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/users/batch/",
+   "view": "AdminUsersBatch",
+   "urlName": "api-v2.1-admin-users-batch",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/import-users/",
+   "view": "AdminImportUsers",
+   "urlName": "api-v2.1-admin-import-users",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/devices/",
+   "view": "AdminDevices",
+   "urlName": "api-v2.1-admin-devices",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/devices/",
+   "view": "AdminDevices",
+   "urlName": "api-v2.1-admin-devices",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/device-errors/",
+   "view": "AdminDeviceErrors",
+   "urlName": "api-v2.1-admin-device-errors",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/device-errors/",
+   "view": "AdminDeviceErrors",
+   "urlName": "api-v2.1-admin-device-errors",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/device-trusted-ip/",
+   "view": "AdminDeviceTrustedIP",
+   "urlName": "api-v2.1-admin-device-trusted-ip",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/device-trusted-ip/",
+   "view": "AdminDeviceTrustedIP",
+   "urlName": "api-v2.1-admin-device-trusted-ip",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/device-trusted-ip/",
+   "view": "AdminDeviceTrustedIP",
+   "urlName": "api-v2.1-admin-device-trusted-ip",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/libraries/",
+   "view": "AdminLibraries",
+   "urlName": "api-v2.1-admin-libraries",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/libraries/",
+   "view": "AdminLibraries",
+   "urlName": "api-v2.1-admin-libraries",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/search-library/",
+   "view": "AdminSearchLibrary",
+   "urlName": "api-v2.1-admin-search-library",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/libraries/{repo_id}/",
+   "view": "AdminLibrary",
+   "urlName": "api-v2.1-admin-library",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/libraries/{repo_id}/",
+   "view": "AdminLibrary",
+   "urlName": "api-v2.1-admin-library",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/admin/libraries/{repo_id}/",
+   "view": "AdminLibrary",
+   "urlName": "api-v2.1-admin-library",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/libraries/{repo_id}/history-limit/",
+   "view": "AdminLibraryHistoryLimit",
+   "urlName": "api-v2.1-admin-library-history-limit",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/admin/libraries/{repo_id}/history-limit/",
+   "view": "AdminLibraryHistoryLimit",
+   "urlName": "api-v2.1-admin-library-history-limit",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/libraries/{repo_id}/history/",
+   "view": "AdminLibraryHistory",
+   "urlName": "api-v2.1-admin-library-history",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/libraries/{repo_id}/commits/{commit_id}/dir/",
+   "view": "AdminLibraryCommitDir",
+   "urlName": "api-v2.1-admin-library-commit-dir",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/libraries/{repo_id}/dirents/",
+   "view": "AdminLibraryDirents",
+   "urlName": "api-v2.1-admin-library-dirents",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/libraries/{repo_id}/dirents/",
+   "view": "AdminLibraryDirents",
+   "urlName": "api-v2.1-admin-library-dirents",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/libraries/{repo_id}/dirent/",
+   "view": "AdminLibraryDirent",
+   "urlName": "api-v2.1-admin-library-dirent",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/libraries/{repo_id}/dirent/",
+   "view": "AdminLibraryDirent",
+   "urlName": "api-v2.1-admin-library-dirent",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/admin/libraries/{repo_id}/dirent/",
+   "view": "AdminLibraryDirent",
+   "urlName": "api-v2.1-admin-library-dirent",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/system-library/",
+   "view": "AdminSystemLibrary",
+   "urlName": "api-v2.1-admin-system-library",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/system-library/upload-link/",
+   "view": "AdminSystemLibraryUploadLink",
+   "urlName": "api-v2.1-admin-system-library-upload-link",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/default-library/",
+   "view": "AdminDefaultLibrary",
+   "urlName": "api-v2.1-admin-default-library",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/default-library/",
+   "view": "AdminDefaultLibrary",
+   "urlName": "api-v2.1-admin-default-library",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/trash-libraries/",
+   "view": "AdminTrashLibraries",
+   "urlName": "api-v2.1-admin-trash-libraries",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/trash-libraries/",
+   "view": "AdminTrashLibraries",
+   "urlName": "api-v2.1-admin-trash-libraries",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/trash-libraries/{repo_id}/",
+   "view": "AdminTrashLibrary",
+   "urlName": "api-v2.1-admin-trash-library",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/admin/trash-libraries/{repo_id}/",
+   "view": "AdminTrashLibrary",
+   "urlName": "api-v2.1-admin-trash-library",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/groups/",
+   "view": "AdminGroups",
+   "urlName": "api-v2.1-admin-groups",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/groups/",
+   "view": "AdminGroups",
+   "urlName": "api-v2.1-admin-groups",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/search-group/",
+   "view": "AdminSearchGroup",
+   "urlName": "api-v2.1-admin-search-group",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/groups/{group_id}/",
+   "view": "AdminGroup",
+   "urlName": "api-v2.1-admin-group",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/admin/groups/{group_id}/",
+   "view": "AdminGroup",
+   "urlName": "api-v2.1-admin-group",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/groups/{group_id}/libraries/",
+   "view": "AdminGroupLibraries",
+   "urlName": "api-v2.1-admin-group-libraries",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/groups/{group_id}/libraries/{repo_id}/",
+   "view": "AdminGroupLibrary",
+   "urlName": "api-v2.1-admin-group-library",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/groups/{group_id}/members/",
+   "view": "AdminGroupMembers",
+   "urlName": "api-v2.1-admin-group-members",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/groups/{group_id}/members/",
+   "view": "AdminGroupMembers",
+   "urlName": "api-v2.1-admin-group-members",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/groups/{group_id}/members/{email}/",
+   "view": "AdminGroupMember",
+   "urlName": "api-v2.1-admin-group-member",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/admin/groups/{group_id}/members/{email}/",
+   "view": "AdminGroupMember",
+   "urlName": "api-v2.1-admin-group-member",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/groups/{group_id}/group-owned-libraries/",
+   "view": "AdminGroupOwnedLibraries",
+   "urlName": "api-v2.1-admin-group-owned-libraries",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/groups/{group_id}/group-owned-libraries/{repo_id}/",
+   "view": "AdminGroupOwnedLibrary",
+   "urlName": "api-v2.1-admin-owned-group-library",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/groups/{group_id}/group-to-department/",
+   "view": "AdminGroupToDeptView",
+   "urlName": "api-v2.1-admin-group-to-department",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/departments/",
+   "view": "AdminDepartments",
+   "urlName": "api-v2.1-admin-departments",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/shares/",
+   "view": "AdminShares",
+   "urlName": "api-v2.1-admin-shares",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/shares/",
+   "view": "AdminShares",
+   "urlName": "api-v2.1-admin-shares",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/shares/",
+   "view": "AdminShares",
+   "urlName": "api-v2.1-admin-shares",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/admin/shares/",
+   "view": "AdminShares",
+   "urlName": "api-v2.1-admin-shares",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/logs/login-logs/",
+   "view": "AdminLogsLoginLogs",
+   "urlName": "api-v2.1-admin-logs-login-logs",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/logs/file-access-logs/",
+   "view": "AdminLogsFileAccessLogs",
+   "urlName": "api-v2.1-admin-logs-file-access-logs",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/logs/file-update-logs/",
+   "view": "AdminLogsFileUpdateLogs",
+   "urlName": "api-v2.1-admin-logs-file-update-logs",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/logs/share-permission-logs/",
+   "view": "AdminLogsSharePermissionLogs",
+   "urlName": "api-v2.1-admin-logs-share-permission-logs",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/logs/repo-transfer-logs/",
+   "view": "AdminLogsFileTransferLogs",
+   "urlName": "api-v2.1-admin-logs-repo-transfer-logs",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/logs/group-member-audit/",
+   "view": "AdminLogGroupMemberAuditLogs",
+   "urlName": "api-v2.1-admin-logs-group-member-audit",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/admin-logs/",
+   "view": "AdminOperationLogs",
+   "urlName": "api-v2.1-admin-admin-operation-logs",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/admin-login-logs/",
+   "view": "AdminLoginLogs",
+   "urlName": "api-v2.1-admin-admin-login-logs",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/share-links/",
+   "view": "AdminShareLinks",
+   "urlName": "api-v2.1-admin-share-links",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/share-links/{token}/",
+   "view": "AdminShareLink",
+   "urlName": "api-v2.1-admin-share-link",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/share-links/{token}/",
+   "view": "AdminShareLink",
+   "urlName": "api-v2.1-admin-share-link",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/share-links/{token}/download/",
+   "view": "AdminShareLinkDownload",
+   "urlName": "api-v2.1-admin-share-link-download",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/share-links/{token}/check-password/",
+   "view": "AdminShareLinkCheckPassword",
+   "urlName": "api-v2.1-admin-share-link-check-password",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/share-links/{token}/dirents/",
+   "view": "AdminShareLinkDirents",
+   "urlName": "api-v2.1-admin-share-link-dirents",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/upload-links/",
+   "view": "AdminUploadLinks",
+   "urlName": "api-v2.1-admin-upload-links",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/upload-links/{token}/",
+   "view": "AdminUploadLink",
+   "urlName": "api-v2.1-admin-upload-link",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/upload-links/{token}/",
+   "view": "AdminUploadLink",
+   "urlName": "api-v2.1-admin-upload-link",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/upload-links/{token}/upload/",
+   "view": "AdminUploadLinkUpload",
+   "urlName": "api-v2.1-admin-upload-link-upload",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/upload-links/{token}/check-password/",
+   "view": "AdminUploadLinkCheckPassword",
+   "urlName": "api-v2.1-admin-upload-link-check-password",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/admin-role/",
+   "view": "AdminAdminRole",
+   "urlName": "api-v2.1-admin-admin-role",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/admin-role/",
+   "view": "AdminAdminRole",
+   "urlName": "api-v2.1-admin-admin-role",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/admin/admin-role/",
+   "view": "AdminAdminRole",
+   "urlName": "api-v2.1-admin-admin-role",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/organizations/",
+   "view": "AdminOrganizations",
+   "urlName": "api-v2.1-admin-organizations",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/organizations/",
+   "view": "AdminOrganizations",
+   "urlName": "api-v2.1-admin-organizations",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/organizations-basic-info/",
+   "view": "AdminOrganizationsBaseInfo",
+   "urlName": "api-v2.1-admin-organizations-basic-info",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/search-organization/",
+   "view": "AdminSearchOrganization",
+   "urlName": "api-v2.1-admin-Search-organization",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/organizations/{org_id}/",
+   "view": "AdminOrganization",
+   "urlName": "api-v2.1-admin-organization",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/organizations/{org_id}/",
+   "view": "AdminOrganization",
+   "urlName": "api-v2.1-admin-organization",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/admin/organizations/{org_id}/",
+   "view": "AdminOrganization",
+   "urlName": "api-v2.1-admin-organization",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/organizations/{org_id}/users/",
+   "view": "AdminOrgUsers",
+   "urlName": "api-v2.1-admin-org-users",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/organizations/{org_id}/users/",
+   "view": "AdminOrgUsers",
+   "urlName": "api-v2.1-admin-org-users",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/organizations/{org_id}/users/{email}/",
+   "view": "AdminOrgUser",
+   "urlName": "api-v2.1-admin-org-user",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/organizations/{org_id}/users/{email}/",
+   "view": "AdminOrgUser",
+   "urlName": "api-v2.1-admin-org-user",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/admin/organizations/{org_id}/users/{email}/",
+   "view": "AdminOrgUser",
+   "urlName": "api-v2.1-admin-org-user",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/organizations/{org_id}/admin-users/",
+   "view": "AdminOrgAdminUsers",
+   "urlName": "api-v2.1-admin-org-staff",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/organizations/{org_id}/groups/",
+   "view": "AdminOrgGroups",
+   "urlName": "api-v2.1-admin-org-groups",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/organizations/{org_id}/repos/",
+   "view": "AdminOrgRepos",
+   "urlName": "api-v2.1-admin-org-repos",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/organizations/{org_id}/statistics/traffic/",
+   "view": "AdminOrgStatsTraffic",
+   "urlName": "api-v2.1-admin-org-stats-traffic",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/organizations/traffic-exceeded/",
+   "view": "TrafficExceededOrganizations",
+   "urlName": "api-v2.1-admin-orgs-traffic-exceeded",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/institutions/",
+   "view": "AdminInstitutions",
+   "urlName": "api-v2.1-admin-institutions",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/institutions/",
+   "view": "AdminInstitutions",
+   "urlName": "api-v2.1-admin-institutions",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/institutions/{institution_id}/",
+   "view": "AdminInstitution",
+   "urlName": "api-v2.1-admin-institution",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/institutions/{institution_id}/",
+   "view": "AdminInstitution",
+   "urlName": "api-v2.1-admin-institution",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/admin/institutions/{institution_id}/",
+   "view": "AdminInstitution",
+   "urlName": "api-v2.1-admin-institution",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/institutions/{institution_id}/users/",
+   "view": "AdminInstitutionUsers",
+   "urlName": "api-v2.1-admin-institution-users",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/institutions/{institution_id}/users/",
+   "view": "AdminInstitutionUsers",
+   "urlName": "api-v2.1-admin-institution-users",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/institutions/{institution_id}/users/{email}/",
+   "view": "AdminInstitutionUser",
+   "urlName": "api-v2.1-admin-institution-user",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/admin/institutions/{institution_id}/users/{email}/",
+   "view": "AdminInstitutionUser",
+   "urlName": "api-v2.1-admin-institution-user",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/logo/",
+   "view": "AdminLogo",
+   "urlName": "api-v2.1-admin-logo",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/favicon/",
+   "view": "AdminFavicon",
+   "urlName": "api-v2.1-admin-favicon",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/license/",
+   "view": "AdminLicense",
+   "urlName": "api-v2.1-admin-license",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/login-background-image/",
+   "view": "AdminLoginBgImage",
+   "urlName": "api-v2.1-admin-login-background-image",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/invitations/",
+   "view": "AdminInvitations",
+   "urlName": "api-v2.1-admin-invitations",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/invitations/",
+   "view": "AdminInvitations",
+   "urlName": "api-v2.1-admin-invitations",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/invitations/{token}/",
+   "view": "AdminInvitation",
+   "urlName": "api-v2.1-admin-invitation",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/wikis/",
+   "view": "AdminWikis",
+   "urlName": "api-v2.1-admin-wikis",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/address-book/groups/",
+   "view": "AdminAddressBookGroups",
+   "urlName": "api-v2.1-admin-address-book-groups",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/address-book/groups/",
+   "view": "AdminAddressBookGroups",
+   "urlName": "api-v2.1-admin-address-book-groups",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/address-book/groups/{group_id}/",
+   "view": "AdminAddressBookGroup",
+   "urlName": "api-v2.1-admin-address-book-group",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/address-book/groups/{group_id}/",
+   "view": "AdminAddressBookGroup",
+   "urlName": "api-v2.1-admin-address-book-group",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/admin/address-book/groups/{group_id}/",
+   "view": "AdminAddressBookGroup",
+   "urlName": "api-v2.1-admin-address-book-group",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/file-scan-records/",
+   "view": "AdminFileScanRecords",
+   "urlName": "api-v2.1-admin-file-scan-records",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/virus-files/",
+   "view": "AdminVirusFilesView",
+   "urlName": "api-v2.1-admin-virus-files",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/virus-files/{virus_id}/",
+   "view": "AdminVirusFileView",
+   "urlName": "api-v2.1-admin-virus-file",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/admin/virus-files/{virus_id}/",
+   "view": "AdminVirusFileView",
+   "urlName": "api-v2.1-admin-virus-file",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/virus-files/batch/",
+   "view": "AdminVirusFilesBatchView",
+   "urlName": "api-v2.1-admin-virus-files-batch",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/notifications/",
+   "view": "AdminNotificationsView",
+   "urlName": "api-2.1-admin-notifications",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/sys-notifications/",
+   "view": "AdminSysNotificationsView",
+   "urlName": "api-2.1-admin-sys-notifications",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/sys-notifications/",
+   "view": "AdminSysNotificationsView",
+   "urlName": "api-2.1-admin-sys-notifications",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/sys-notifications/{nid}/",
+   "view": "AdminSysNotificationView",
+   "urlName": "api-2.1-admin-sys-notification",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/admin/sys-notifications/{nid}/",
+   "view": "AdminSysNotificationView",
+   "urlName": "api-2.1-admin-sys-notification",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/sys-user-notifications/",
+   "view": "AdminSysUserNotificationsView",
+   "urlName": "api-2.1-admin-sys-user-notifications",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/sys-user-notifications/",
+   "view": "AdminSysUserNotificationsView",
+   "urlName": "api-2.1-admin-sys-user-notifications",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/sys-user-notifications/{nid}/",
+   "view": "AdminSysUserNotificationView",
+   "urlName": "api-2.1-admin-sys-user-notification",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/terms-and-conditions/",
+   "view": "AdminTermsAndConditions",
+   "urlName": "api-v2.1-admin-terms-and-conditions",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/terms-and-conditions/",
+   "view": "AdminTermsAndConditions",
+   "urlName": "api-v2.1-admin-terms-and-conditions",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/admin/terms-and-conditions/{term_id}/",
+   "view": "AdminTermAndCondition",
+   "urlName": "api-v2.1-admin-term-and-condition",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/admin/terms-and-conditions/{term_id}/",
+   "view": "AdminTermAndCondition",
+   "urlName": "api-v2.1-admin-term-and-condition",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/work-weixin/departments/",
+   "view": "AdminWorkWeixinDepartments",
+   "urlName": "api-v2.1-admin-work-weixin-departments",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/work-weixin/departments/{department_id}/members/",
+   "view": "AdminWorkWeixinDepartmentMembers",
+   "urlName": "api-v2.1-admin-work-weixin-department-members",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/work-weixin/users/batch/",
+   "view": "AdminWorkWeixinUsersBatch",
+   "urlName": "api-v2.1-admin-work-weixin-users",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/work-weixin/departments/import/",
+   "view": "AdminWorkWeixinDepartmentsImport",
+   "urlName": "api-v2.1-admin-work-weixin-department-import",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/dingtalk/departments/",
+   "view": "AdminDingtalkDepartments",
+   "urlName": "api-v2.1-admin-dingtalk-departments",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/dingtalk/departments/{department_id}/members/",
+   "view": "AdminDingtalkDepartmentMembers",
+   "urlName": "api-v2.1-admin-dingtalk-department-members",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/dingtalk/users/batch/",
+   "view": "AdminDingtalkUsersBatch",
+   "urlName": "api-v2.1-admin-dingtalk-users-batch",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/admin/dingtalk/departments/import/",
+   "view": "AdminDingtalkDepartmentsImport",
+   "urlName": "api-v2.1-admin-dingtalk-department-import",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/repos/{repo_id}/webhooks/",
+   "view": "WebhooksView",
+   "urlName": "api-v2.1-webhooks",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/webhooks/",
+   "view": "WebhooksView",
+   "urlName": "api-v2.1-webhooks",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/webhooks/",
+   "view": "WebhooksView",
+   "urlName": "api-v2.1-webhooks",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/repos/{repo_id}/webhooks/",
+   "view": "WebhooksView",
+   "urlName": "api-v2.1-webhooks",
+   "source": "urls.py"
+  },
+  {
+   "method": "DELETE",
+   "path": "/api/v2.1/repos/{repo_id}/webhooks/{webhook_id}/",
+   "view": "WebhooksView",
+   "urlName": "api-v2.1-webhooks",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/repos/{repo_id}/webhooks/{webhook_id}/",
+   "view": "WebhooksView",
+   "urlName": "api-v2.1-webhooks",
+   "source": "urls.py"
+  },
+  {
+   "method": "POST",
+   "path": "/api/v2.1/repos/{repo_id}/webhooks/{webhook_id}/",
+   "view": "WebhooksView",
+   "urlName": "api-v2.1-webhooks",
+   "source": "urls.py"
+  },
+  {
+   "method": "PUT",
+   "path": "/api/v2.1/repos/{repo_id}/webhooks/{webhook_id}/",
+   "view": "WebhooksView",
+   "urlName": "api-v2.1-webhooks",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/logs/login/",
+   "view": "LoginLogs",
+   "urlName": "api-v2.1-admin-logs-login",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/logs/file-audit/",
+   "view": "FileAudit",
+   "urlName": "api-v2.1-admin-logs-file-audit",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/logs/file-update/",
+   "view": "FileUpdate",
+   "urlName": "api-v2.1-admin-logs-file-update",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/logs/perm-audit/",
+   "view": "PermAudit",
+   "urlName": "api-v2.1-admin-logs-perm-audit",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/admin/logs/export-excel/",
+   "view": "SysLogsExport",
+   "urlName": "api-v2.1-admin-logs-export-excel",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/subscription/",
+   "view": "SubscriptionView",
+   "urlName": "api-v2.1-subscription",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/subscription/plans/",
+   "view": "SubscriptionPlansView",
+   "urlName": "api-v2.1-subscription-plans",
+   "source": "urls.py"
+  },
+  {
+   "method": "GET",
+   "path": "/api/v2.1/subscription/logs/",
+   "view": "SubscriptionLogsView",
+   "urlName": "api-v2.1-subscription-logs",
+   "source": "urls.py"
+  }
+ ]
+}
